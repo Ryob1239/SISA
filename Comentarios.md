@@ -1,1 +1,0 @@
-Comentarios en general
