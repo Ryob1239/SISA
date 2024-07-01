@@ -129,12 +129,11 @@ header .logout:hover::before {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin-left: 1200px;
+    margin-left: 890px;
 }
 
 .logo img {
-    max-width: 300px;
     height: auto;
-    width: 100%;
+    width: 200%;
 }
 
