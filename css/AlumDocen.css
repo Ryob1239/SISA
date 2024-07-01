@@ -13,7 +13,7 @@ body {
     flex-direction: column;
     margin: 0;
 }
-
+/*Estilo del contenedor principal (wrapper):*/
 .wrapper {
     background-color: #ffffff;
     padding: 15px;
@@ -24,7 +24,7 @@ body {
     display: flex;
     flex-direction: column;
 }
-
+/*Estilo del encabezado (header):*/
 header {
     background-color: #ffffff;
     padding: 10px;
@@ -39,7 +39,7 @@ header h1 {
     font-size: 16px;
     color: #000;
 }
-
+/*Estilo del botón de cierre de sesión (logout):*/
 header .logout {
     background-color: #004494;
     color: white;
@@ -72,14 +72,14 @@ header .logout:hover {
 header .logout:hover::before {
     transform: translate(-50%, -50%) scale(1);
 }
-
+/*Estilo del contenedor (container):*/
 .container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     padding: 0px;
 }
-
+/*Estilo del menú (menu):*/
 .menu {
     display: flex;
     flex-direction: column;
@@ -123,8 +123,7 @@ header .logout:hover::before {
 .menu button:hover::before {
     transform: translate(-50%, -50%) scale(1);
 }
-
-
+/*Estilo del logo:*/
 .logo {
     display: flex;
     align-items: center;
