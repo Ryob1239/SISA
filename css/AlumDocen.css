@@ -90,12 +90,12 @@ header .logout:hover::before {
     background-color: #004494;
     color: white;
     border: none;
-    padding: 15px 30px;
+    padding: 35px 50px;
     margin: 10px 0;
-    font-size: 14px;
+    font-size: 18px;
     cursor: pointer;
     border-radius: 5px;
-    text-align: left;
+    text-align: center;
 
     transition: background-color 0.5s ease; /* Add the transition property */
     position: relative; /* Set the position to relative for the pseudo-elements */
@@ -128,7 +128,7 @@ header .logout:hover::before {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin-left: 890px;
+    /*Mover imagen derecha: margin-left: 890px;*/
 }
 
 .logo img {
