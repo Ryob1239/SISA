@@ -12,6 +12,9 @@
             destino = 'Alumno.html';
         } else if (primeraLetra === 'd') {
             destino = 'Docente.html';
+        }
+        else if (primeraLetra === 'm') {
+            destino = 'Administrativos.html';
         } else {
             alert('Usuario no válido');
             return;
