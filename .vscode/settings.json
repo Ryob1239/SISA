@@ -1,3 +1,6 @@
 {
-    "git.autofetch": "all"
+    "git.autofetch": "all",
+    "githubPullRequests.ignoredPullRequestBranches": [
+        "SISA"
+    ]
 }
