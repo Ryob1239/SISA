@@ -1,4 +1,6 @@
-Comentarios en general NO MODIFIQUEN EL CODIGO
-1-Botones mas grandes
-2-Mover logo(En el centro(Se vera bien))
-3-Hola prueb
+LISTA DE PENDIENTES
+1-Modificaciones del inicio de sesion
+2-Limpiar codigos
+3-Hacer el de administrativos
+4-agendar salon y cambiar salon sera igual al de administrativos (Docentes)
+5-Diponibilidad de salones, horario de grupo igual al de administrativos pero que solo lo puedan ver (Docentes)
