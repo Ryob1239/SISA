@@ -4,37 +4,58 @@ body {
     padding: 0;
     background: #f4f4f4;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     height: 100vh;
+    position: relative;
+    justify-content: center;
+}
+
+.header {
+    position: absolute;
+    top: 40px; /* Ajusta según sea necesario */
+    left: 40px; /* Ajusta según sea necesario */
+    width: 100%;
+    background-color: #f4f4f4;
+    text-align: left;
+    padding: 10px;
+}
+
+.title {
+    font-size: 30px;
+    color: #004494;
+    margin: 0;
+}
+
+.outer-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    position: relative;
 }
 
 .login-container {
+    border: 2px solid gray;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    max-width: 1200px;
+    width: 750px; /* Ajusta el ancho del contenedor */
     padding: 20px;
     background: #fff;
+    margin-right: 460px; /* Ajusta la separación entre el formulario y el logo */
+    border-radius: 10px;
 }
 
 .login-form {
     flex: 1;
-    padding-right: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.login-form h2 {
-    margin-bottom: 20px;
-    color: #333;
-}
-
 .login-form input[type="text"],
 .login-form input[type="password"] {
-    width: 60%;
+    width: 100%; /* Ajusta el ancho de los campos de entrada */
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ddd;
@@ -42,36 +63,39 @@ body {
 }
 
 .login-form button {
-    width: 100%;
+    width: 100%; /* Ajusta el ancho del botón */
     padding: 10px;
     border: none;
     border-radius: 5px;
     background: #0056b3;
     color: white;
     cursor: pointer;
-    width: 360px;
-    height: 40px;       
+    height: 40px;
 }
 
 .login-form button:hover {
     background: #004494;
 }
 
-.emblem {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.emblem img {
-    max-width: 100%;
+.logo {
+    max-width: 100%; /* Ajusta el tamaño del logo */
     height: auto;
 }
 
+.footer {
+    position: absolute;
+    bottom: 20px; /* Ajusta según sea necesario */
+    left: 20px; /* Ajusta según sea necesario */
+    width: auto;
+    background-color: #f4f4f4;
+    text-align: left;
+    padding: 10px;
+}
+
 .institution-name {
-    margin-top: 20px;
+    margin: 0;
     font-weight: bold;
+    color: burlywood;
 }
 
 .button {
@@ -107,7 +131,7 @@ body {
 
 .button:hover {
     background-color: #003B7A;
-    width: 200px;
+    width: 100%;
     height: 40px;
 }
 
@@ -120,13 +144,12 @@ body {
     transform: translateY(4px);
 }
 
-
-body{
+body {
     font-family: sans-serif;
     font-size: 1.2rem;
     min-height: 100%;
 }
 
-html{
+html {
     height: 100%;
 }
