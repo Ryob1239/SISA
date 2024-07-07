@@ -45,7 +45,7 @@ header .logout {
     color: white;
     padding: 10px 15px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 20px;
     transition: background-color 0.5s ease; /* Add the transition property */
     position: relative; /* Set the position to relative for the pseudo-elements */
     overflow: hidden;
@@ -60,7 +60,7 @@ header .logout::before {
     width: 100%;
     height: 100%;
     background-color: #000;
-    border-radius: 5px;
+    border-radius: 20px;
     transition: transform 0.5s ease;
     opacity: 0.1;
 }
@@ -94,7 +94,7 @@ header .logout:hover::before {
     margin: 10px 0;
     font-size: 18px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 20px;
     text-align: center;
 
     transition: background-color 0.5s ease; /* Add the transition property */
@@ -111,7 +111,7 @@ header .logout:hover::before {
     width: 100%;
     height: 100%;
     background-color: #000;
-    border-radius: 5px;
+    border-radius: 20px;
     transition: transform 0.5s ease;
     opacity: 0.1;
 }
@@ -136,3 +136,37 @@ header .logout:hover::before {
     width: 200%;
 }
 
+
+header .In {
+    background-color: #FFEFD5;
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.5s ease; /* Add the transition property */
+    position: relative; /* Set the position to relative for the pseudo-elements */
+    left: 595px;
+    overflow: hidden;
+}
+
+header .In::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    border-radius: 20px;
+    transition: transform 0.5s ease;
+    opacity: 0.1;
+}
+
+header .In:hover {
+    background-color: #FFEFD5;
+}
+
+header .In:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
