@@ -9,8 +9,8 @@ LISTA DE PENDIENTES
 2-Limpiar codigos
 3-Hacer el de administrativos
     3.1-Hacer inicio (Listo)
-    3.2-Agendacion de salon     
-    3.3-Administracion Horarios
+    3.2-Agendacion de salon (Listo)  
+    3.3-Administracion Horarios 
     3.4-Administrar tutorados
 4-agendar salon y cambiar salon sera igual al de administrativos pero solo podran ver (Docentes)
 5-Diponibilidad de salones, horario de grupo igual al de administrativos pero que solo lo puedan ver (Docentes)
