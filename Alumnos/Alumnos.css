@@ -86,7 +86,7 @@ header .logout:hover::before {
     
 }
 
-.menu button {
+.menu button{
     background-color: #004494;
     color: white;
     border: none;

@@ -6,14 +6,24 @@ LISTA DE PENDIENTES
     1.4-hacer boton de inicar sesion mas grande (LISTO)
     1.5-poner contorno al rededor (LISTO)
     1.6-Registro de cuenta nueva (LISTO)
-2-Limpiar codigos
-3-Hacer el de administrativos
-    3.1-Hacer inicio (Listo)
-    3.2-Agendacion de salon (Listo)  
-    3.3-Administracion Horarios 
-    3.4-Administrar tutorados
-4-agendar salon y cambiar salon sera igual al de administrativos pero solo podran ver (Docentes)
-5-Diponibilidad de salones, horario de grupo igual al de administrativos pero que solo lo puedan ver (Docentes)
-6-Disponibilidad de salones, horario de grupo igual al docentes (Alumnos)
-7-SISE y correo institucional redirigir al SISE y a correo institucional (Alumnos)
-8-Calendario escolar nueva ventana con la foto del calendario escolar(Alumnos)
+
+2-Hacer el de administrativos
+    2.1-Hacer inicio (Listo)
+    2.2-Agendacion de salon (Listo)  
+    2.3-Administracion Horarios 
+    2.4-Administrar tutorados
+
+3-Hacer el de docentes
+    3.1-Agendar salon sera igual al de administrativos pero solo podran ver (Docentes)
+    3.2-Cambiar salon sera igual al de administrativos pero solo podran ver (Docentes)
+    3.3-Diponibilidad de salones igual al de administrativos pero que solo lo puedan ver (Docentes)
+    3.4-Horario de grupo igual al de administrativos pero que solo lo puedan ver (Docentes)
+
+4-Hacer el de alumnos
+    4.1-Disponibilidad de salones igual al docentes (Alumnos)
+    4.2-Horario de grupo igual al docentes (Alumnos)
+    4.3-SISE redirigir al SISE a correo institucional (Alumnos) (LISTO)
+    4.4-Correo institucional redirigir a correo institucional (Alumnos) (LISTO)
+    4.5-Calendario escolar nueva ventana con la foto del calendario escolar(Alumnos) (LISTO)
+
+5-Limpiar codigos
