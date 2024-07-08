@@ -96,7 +96,6 @@ header .logout:hover::before {
     cursor: pointer;
     border-radius: 10px;
     text-align: center;
-
     transition: background-color 0.5s ease; /* Add the transition property */
     position: relative; /* Set the position to relative for the pseudo-elements */
     overflow: hidden;
@@ -136,7 +135,6 @@ header .logout:hover::before {
     width: 200%;
 }
 
-
 header .In {
     background-color: #FFEFD5;
     color: black;
@@ -169,4 +167,80 @@ header .In:hover {
 
 header .In:hover::before {
     transform: translate(-50%, -50%) scale(1);
+}
+
+/* Estilos para la tabla de grupos */
+.tabla-grupo {
+    border-collapse: collapse;
+    width: 20%;
+    text-align: center;
+}
+
+.tabla-grupo th, .tabla-grupo td {
+    border: 1px solid #000;
+    padding: 12px;
+    background-color: #f4ce8c;
+}
+
+.tabla-grupo th {
+    background-color: #e0e0e0;
+    font-size: 1.2em;
+}
+
+/* Estilos para el botón TDM32 */
+.TDM32-button {
+    background-color: #f4ce8c;
+    border: none;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    text-align: center;
+}
+
+.TDM32-button:hover {
+    background-color: #e0b86b;
+}
+
+/* Estilos para la tabla de horarios */
+.tabla-horarios {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 100px;
+    margin-left: 50px;
+    width: 90%;
+}
+
+.tabla-horarios th, .tabla-horarios td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: center;
+}
+
+.tabla-horarios thead {
+    background-color: #f2f2f2;
+}
+
+/* Estilos para los botones MODIFICAR y REGRESAR */
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 540px;
+}
+
+.buttons button {
+    background-color: #004085;
+    color: white;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.buttons button:hover {
+    background-color: #003366;
 }
