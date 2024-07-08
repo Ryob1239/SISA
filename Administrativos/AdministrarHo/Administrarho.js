@@ -13,9 +13,19 @@ document.getElementById('TDM32').addEventListener('click', function() {
     document.getElementById('Logo').style.display = 'none';
 });
 
-document.getElementById('back').addEventListener('click', function() {
-    
+document.getElementById('back').addEventListener('click', function() {    
     document.getElementById('tableh').style.display = 'none';
     document.getElementById('buttons').style.display = 'none';
     document.getElementById('Logo').style.display = 'block';
 });
+
+document.querySelector('.modify').addEventListener('click', function(event) {
+    event.preventDefault(); // Previene la acción por defecto del enlace
+    var mensaje = 'Quieres guardar los cambios?'; // Cambia esto por el mensaje que desees
+    var confirmacion = confirm(mensaje);
+    if (confirmacion) {
+        document.getElementById('tableh').style.display = 'none';
+        document.getElementById('buttons').style.display = 'none';
+        document.getElementById('Logo').style.display = 'block';
+    }
+})
