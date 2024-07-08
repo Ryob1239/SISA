@@ -12,7 +12,7 @@ LISTA DE PENDIENTES
     2.2-Agendacion de salon (Listo)  
     2.3-Administracion Horarios (LISTO)
     2.4-Administrar tutorados (LISTO)
-        2.4.1-Hacer tutores asignados
+        2.4.1-Hacer tutores asignados (LISTO)
         2.4.2-Hacer asignar tutor (LISTO)
 
 3-Hacer el de docentes

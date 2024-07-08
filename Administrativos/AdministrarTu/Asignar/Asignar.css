@@ -170,3 +170,56 @@ header .In:hover {
 header .In:hover::before {
     transform: translate(-50%, -50%) scale(1);
 }
+
+.outer-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+}
+
+.login-container {
+    border: 2px solid #fcac34;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    padding: 100px;
+    background: #ffe4b4;
+    border-radius: 15px;
+    margin-left: 500px;
+    margin-top: 150px;
+}
+
+.login-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%; /* Ajusta el ancho de los campos de entrada */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #fcc45c;
+    border-radius: 5px;
+    background-color: #ffd48c;
+}
+
+.login-form button {
+    width: 100%; /* Ajusta el ancho del botón */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #0056b3;
+    color: white;
+    cursor: pointer;
+    height: 40px;
+}
+
+.login-form button:hover {
+    background: #004494;
+}
