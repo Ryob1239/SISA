@@ -6,3 +6,13 @@ document.querySelector('.logout').addEventListener('click', function(event) {
         window.location.href = '../Inicio/Inicio/Inicio.html'; // Asegúrate de que esta es la página a la que quieres redirigir
     }
 });
+
+document.querySelector('.Disponibilidad').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevents the default action of the button
+    window.location.href = 'Disponibilidad/Disponibilidad.html'; // Redirects to the agendacion.html page
+});
+
+document.querySelector('.Horario').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevents the default action of the button
+    window.location.href = 'Horario de grupo/Horario de grupo.html'; // Redirects to the agendacion.html page
+});

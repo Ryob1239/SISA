@@ -1,11 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sistema Integral de Servicios Académicos</title>
+    <link rel="stylesheet" href="Horario de grupo.css">
 </head>
 <body>
-    
+    <div class="wrapper">
+        <header>
+            <h1>SISTEMA INTEGRAL DE SERVICIOS ACADÉMICOS <br> <center>(DOCENTES)</center> </h1>
+            <a href="../Docente.html" class="In">Inicio</a>
+            <a href="../../Inicio/Inicio/Inicio.html" class="logout">Cerrar Sesión</a>
+            
+        </header>
+        <div class="container">
+            <table class="tabla-grupo">
+                <tr>
+                    <th>GRUPOS</th>
+                </tr>
+                <tr><td>TDM31</td></tr>
+                <tr><td><button class="TDM32-button" id="TDM32">TDM32</button></td></tr>
+                <tr><td>TDM33</td></tr>
+                <tr><td>TRM31</td></tr>
+                <tr><td>TRM32</td></tr>
+                <tr><td>TRM33</td></tr>
+                <tr><td>IRCM31</td></tr>
+                <tr><td>IRCM32</td></tr>
+                <tr><td>IRCM33</td></tr>
+                <tr><td>IDSM31</td></tr>
+                <tr><td>IDSM32</td></tr>
+                <tr><td>IDSM33</td></tr>
+                <tr><td>PIM31</td></tr>
+                <tr><td>PIM32</td></tr>
+                <tr><td>PIM33</td></tr>
+                <tr><td>IPIM31</td></tr>
+                <tr><td>IPIM32</td></tr>
+                <tr><td>IPIM33</td></tr>
+            </table>
+
+            <div>
+                <table class="tabla-horarios" id="tableh" style="display: none;">
+                    <thead>
+                        <tr>
+                            <th>HORARIO/DÍAS</th>
+                            <th>LUNES</th>
+                            <th>MARTES</th>
+                            <th>MIERCOLES</th>
+                            <th>JUEVES</th>
+                            <th>VIERNES</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>7:00 - 8:00</td>
+                            <td>APLICACIONES WEB</td>
+                            <td>SISTEMAS OPERATIVOS</td>
+                            <td>CÁLCULO DIFERENCIAL</td>
+                            <td>PROBABILIDAD Y ESTADISTICA</td>
+                            <td>PROBABILIDAD Y ESTADÍSTICA</td>
+                        </tr>
+                        <tr>
+                            <td>8:00 - 9:00</td>
+                            <td>BASE DE DATOS PARA APLICACIONES</td>
+                            <td>SISTEMAS OPERATIVOS</td>
+                            <td>CÁLCULO DIFERENCIAL</td>
+                            <td>PROBABILIDAD Y ESTADISTICA</td>
+                            <td>FORMACIÓN SOCIOCULTURAL II</td>
+                        </tr>
+                        <tr>
+                            <td>9:00 - 10:00</td>
+                            <td>BASE DE DATOS PARA APLICACIONES</td>
+                            <td>BASE DE DATOS PARA APLICACIONES</td>
+                            <td>PROBABILIDAD Y ESTADISTICA</td>
+                            <td>PROBABILIDAD Y ESTADISTICA</td>
+                            <td>CÁLCULO DIFERENCIAL</td>
+                        </tr>
+                        <tr>
+                            <td>10:00 - 11:00</td>
+                            <td>INGLÉS III</td>
+                            <td>BASE DE DATOS PARA APLICACIONES</td>
+                            <td>INGLÉS III</td>
+                            <td>CÁLCULO DIFERENCIAL</td>
+                            <td>BASE DE DATOS PARA APLICACIONES</td>
+                        </tr>
+                        <tr>
+                            <td>11:00 - 12:00</td>
+                            <td>INGLÉS III</td>
+                            <td>BASE DE DATOS PARA APLICACIONES</td>
+                            <td>INGLÉS III</td>
+                            <td>FORMACIÓN SOCIOCULTURAL II</td>
+                            <td>BASE DE DATOS PARA APLICACIONES</td>
+                        </tr>
+                        <tr>
+                            <td>12:00 - 1:00</td>
+                            <td>APLICACIONES WEB</td>
+                            <td>INTEGRADORA</td>
+                            <td>SISTEMAS OPERATIVOS</td>
+                            <td>APLICACIONES WEB</td>
+                            <td>SISTEMAS OPERATIVOS</td>
+                        </tr>
+                        <tr>
+                            <td>1:00 - 2:00</td>
+                            <td>APLICACIONES WEB</td>
+                            <td>INTEGRADORA</td>
+                            <td>APLICACIONES WEB</td>
+                            <td>APLICACIONES WEB</td>
+                            <td>SISTEMAS OPERATIVOS</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="buttons" id="buttons" style="display: none;">
+                    <button class="modify" id="modify">MODIFICAR</button>
+                    <button class="back" id="back">REGRESAR</button>
+                </div>
+            </div>
+            <div class="Logo">
+                <img src="../../Recursos Visuales/Logo.jpg" alt="Logo" id="Logo">
+            </div>
+            <div class="footer"></div>
+        </div>
+    </div>
+    <script src="Horario de grupo.js"></script>
 </body>
 </html>

@@ -28,4 +28,4 @@ document.querySelector('.modify').addEventListener('click', function(event) {
         document.getElementById('buttons').style.display = 'none';
         document.getElementById('Logo').style.display = 'block';
     }
-})
+});

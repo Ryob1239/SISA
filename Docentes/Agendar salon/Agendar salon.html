@@ -1,11 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sistema Integral de Servicios Académicos</title>
+    <link rel="stylesheet" href="Agendar salon.css">
 </head>
 <body>
-    
+    <div class="wrapper">
+        <header>
+            <h1>SISTEMA INTEGRAL DE SERVICIOS ACADÉMICOS <br> <center>(DOCENTES)</center> </h1>
+            <a href="../Docente.html" class="In">Inicio</a>
+            <a href="../../Inicio/Inicio/Inicio.html" class="logout">Cerrar Sesión</a>
+            
+        </header>
+        <div class="containe">
+            <div class="container">
+                <div class="date-picker">
+                    <div class="header">SELECCIONAR FECHA</div>
+                    <div class="body">
+                        <label for="date-input">INGRESE FECHA <span class="icon">📅</span> </label>
+                        <div>
+                            <hr id="linea">
+                        </div>
+                        <div class="input-container">
+                            <input type="text" id="date-input" placeholder="mes/año" style="background-color: #FFEFD5;">
+                        </div>
+                        <div id="error-message" class="error-message" style="display: none;"></div>
+                    </div>
+                    <div class="footer">
+                        <button id="clear">Clear</button>
+                        <button id="cancel">Cancel</button>
+                        <button id="ok">OK</button>
+                    </div>
+                </div>
+                <div class="table-container" id="table-container" style="display: none;">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>DOCENTE</th>
+                                <th>SALÓN</th>
+                                <th>DÍA</th>
+                                <th>HORARIO</th>
+                                <th>ESTADO</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Karim Manuel Montelongo Sánchez</td>
+                                <td>J004</td>
+                                <td>11/07/2027</td>
+                                <td>7:00 - 8:00</td>
+                                <td>Espera</td>
+                            </tr>
+                            <tr>
+                                <td>Felipe Torres Molina</td>
+                                <td>J001</td>
+                                <td>15/07/2024</td>
+                                <td>10:00 - 12:00</td>
+                                <td>ACEPTADO</td>
+                            </tr>
+                            <tr>
+                                <td>Kevin Alexis Zamora Santos</td>
+                                <td>J008</td>
+                                <td>31/07/2024</td>
+                                <td>9:00 - 10:00</td>
+                                <td>RECHAZADO</td>
+                            </tr>
+                            <tr>
+                                <td>Ángel Gabriel Zatarain Sánchez</td>
+                                <td>J008</td>
+                                <td>02/08/2024</td>
+                                <td>12:00 - 2:00</td>
+                                <td>ACEPTADO</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="logo">
+                <img src="../../Recursos Visuales/Logo.jpg" alt="Logo">
+            </div>
+            <div class="footer"></div>
+        </div>
+    </div>
+    <script src="Agendar salon.js"></script>
 </body>
 </html>
