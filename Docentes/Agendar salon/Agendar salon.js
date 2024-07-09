@@ -21,6 +21,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const solicitarusoButton = document.getElementById("solicitar-uso-button");
     const solicitarForm = document.getElementById("solicitar-form");
 
+    const imagen = document.getElementById("Logo");
+
     edificiosButton.addEventListener("click", function() {
         if (buildingContent.style.display === "none" || buildingContent.style.display === "") {
             buildingContent.style.display = "block";
@@ -45,8 +47,10 @@ document.addEventListener("DOMContentLoaded", function() {
     audiovisualButton.addEventListener("click", function() {
         if (avContent.style.display === "none" || avContent.style.display === "") {
             avContent.style.display = "block";
+            imagen.style.display = "none";
         } else {
             avContent.style.display = "none";
+            imagen.style.display = "block";
         }
     });
 
@@ -95,4 +99,5 @@ function cancelarS() {
 
 function cancelart() {
     document.getElementById("av-content").style.display = "none"; 
+    document.getElementById("Logo").style.display = "block"; 
 }

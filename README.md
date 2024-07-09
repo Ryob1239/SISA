@@ -15,7 +15,7 @@ LISTA DE PENDIENTES
         2.4.1-Hacer tutores asignados (LISTO)
         2.4.2-Hacer asignar tutor (LISTO)
 
-3-Hacer el de docentes
+3-Hacer el de docentes (LISTO)
     3.1-Agendar salon sera igual al de administrativos pero solo podran ver (Docentes) (LISTO)
     3.3-Diponibilidad de salones igual al de administrativos pero que solo lo puedan ver (Docentes) (LISTO)
     3.4-Horario de grupo igual al de administrativos pero que solo lo puedan ver (Docentes) (LISTO)
