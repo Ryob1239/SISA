@@ -1,4 +1,4 @@
-html{
+html {
     height: 100%;
 }
 
@@ -12,7 +12,7 @@ body {
     flex-direction: column;
     margin: 0;
 }
-/*Estilo del contenedor principal (wrapper):*/
+
 .wrapper {
     background-color: #ffffff;
     padding: 15px;
@@ -23,7 +23,7 @@ body {
     display: flex;
     flex-direction: column;
 }
-/*Estilo del encabezado (header):*/
+
 header {
     background-color: #ffffff;
     padding: 10px;
@@ -38,15 +38,15 @@ header h1 {
     font-size: 16px;
     color: #000;
 }
-/*Estilo del botón de cierre de sesión (logout):*/
+
 header .logout {
     background-color: #004494;
     color: white;
     padding: 10px 15px;
     text-decoration: none;
     border-radius: 20px;
-    transition: background-color 0.5s ease; /* Add the transition property */
-    position: relative; /* Set the position to relative for the pseudo-elements */
+    transition: background-color 0.5s ease;
+    position: relative;
     overflow: hidden;
 }
 
@@ -71,18 +71,17 @@ header .logout:hover {
 header .logout:hover::before {
     transform: translate(-50%, -50%) scale(1);
 }
-/*Estilo del contenedor (container):*/
+
 .containe {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     padding: 0px;
 }
-/*Estilo del menú (menu):*/
+
 .menu {
     display: flex;
     flex-direction: column;
-    
 }
 
 .menu button {
@@ -95,9 +94,8 @@ header .logout:hover::before {
     cursor: pointer;
     border-radius: 20px;
     text-align: center;
-
-    transition: background-color 0.5s ease; /* Add the transition property */
-    position: relative; /* Set the position to relative for the pseudo-elements */
+    transition: background-color 0.5s ease;
+    position: relative;
     overflow: hidden;
 }
 
@@ -122,12 +120,11 @@ header .logout:hover::before {
 .menu button:hover::before {
     transform: translate(-50%, -50%) scale(1);
 }
-/*Estilo del logo:*/
+
 .logo {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    /*Mover imagen derecha: margin-left: 890px;*/
     margin-right: 200px;
 }
 
@@ -142,8 +139,8 @@ header .In {
     padding: 10px 15px;
     text-decoration: none;
     border-radius: 20px;
-    transition: background-color 0.5s ease; /* Add the transition property */
-    position: relative; /* Set the position to relative for the pseudo-elements */
+    transition: background-color 0.5s ease;
+    position: relative;
     left: 595px;
     overflow: hidden;
 }
@@ -177,7 +174,6 @@ header .In:hover::before {
     width: 100%;
     margin-left: 100px;
     margin-top: 100px;
-
     gap: 20px;
 }
 
@@ -239,50 +235,250 @@ input[type="text"]::placeholder {
     justify-content: space-between;
 }
 
-button {
-    background: none;
+.containe {
+    text-align: center;
+}
+
+.gradient-button {
+    background: #fbd9b1;
     border: none;
-    font-size: 14px;
+    color: black;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.gradient-button .arrow-down {
+    margin-left: 10px;
+}
+
+.building-content {
+    margin-top: 48px;
+    display: none;
+    position: absolute;
+    left: 30px;
+}
+
+.building-content table {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.building-content td {
+    padding: 0;
+}
+
+.table-button {
+    background: white;
+    border: 1px solid black;
+    color: black;
+    padding: 10px 22.5px;
+    text-align: left;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    margin-top: -1px;
+    margin-right: 15px;
+}
+
+.table-button .arrow-right {
+    font-size: 16px;
+}
+
+.table-button:hover {
+    background: #f0f0f0;
+}
+
+.room-content {
+    margin-top: 48px;
+    display: none;
+    position: absolute;
+    left: 175px;
+}
+
+.room-content table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    
+}
+
+.room-content td {
+    padding: 0;
+    text-align: left;
+    width: 100%;
+}
+
+.av-content {
+    margin-top: 100px;
+    display: none;
+    background: #fbd9b1; /* Background color similar to the image */
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.av-content h2 {
+    margin: 20px 0;
+    font-size: 40px;
+    color: black;
+}
+
+.av-content h3 {
+    margin: 50px 0;
+    font-size: 40px;
+    color: black;
+}
+
+.av-button {
+    background: #004494; /* Button background color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.av-button:hover {
+    background: #003B7A; /* Button hover background color */
+}
+
+.schedule-content {
+    margin-top: 10px;
+    display: none;
+    background: #fbd9b1; /* Background color similar a la imagen */
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.schedule-content h2 {
+    margin: 10px 0;
+    font-size: 24px;
+    color: black;
+}
+
+.schedule-content h3 {
+    margin: 10px 0;
+    font-size: 20px;
+    color: black;
+}
+
+.schedule-button {
+    background: #004494; /* Button background color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.schedule-button:hover {
+    background: #003B7A; /* Button hover background color */
+}
+
+.agenda-form {
+    display: none;
+}
+
+.agenda-form {
+    background-color: #f5deb3;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.agenda-form h2 {
+    text-align: center;
+}
+
+.agenda-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.agenda-form label {
+    margin-top: 10px;
+}
+
+.agenda-form input {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 200px;
+}
+
+.agenda-form button {
+    margin: 10px 5px;
+    padding: 10px 20px;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-button.clear, button.cancel {
-    color: #003B7A;
+.agenda-form button:hover {
+    background-color: #0055a5;
 }
 
-button.ok {
-    color: #003366;
+
+
+
+
+
+
+.solicitar-form {
+    display: none;
 }
 
-#linea{
-    border: 1px solid #ffd59b;
-    width: 334px;
-    border-radius: 5px;
-    justify-content: flex-start;
-    margin-left: -20px;
-}
-
-.table-container {
-
-    border-radius: 10px;
+.solicitar-form {
+    background-color: #f5deb3;
     padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    margin-top: 20px;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    border: 1px solid #003366;
-}
-
-th, td {
-    border: 1px solid #003366;
-    padding: 8px;
-    text-align: left;
-}
-
-th {
-    background-color: #f2f2f2;
+.solicitar-form h2 {
     text-align: center;
+}
+
+.solicitar-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.solicitar-form label {
+    margin-top: 10px;
+}
+
+.solicitar-form input {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 200px;
+}
+
+.solicitar-form button {
+    margin: 10px 5px;
+    padding: 10px 20px;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.solicitar-form button:hover {
+    background-color: #0055a5;
 }

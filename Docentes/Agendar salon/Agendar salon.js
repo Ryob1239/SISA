@@ -7,37 +7,92 @@ document.querySelector('.logout').addEventListener('click', function(event) {
     }
 });
 
-document.getElementById('ok').addEventListener('click', function() {
-    const dateInput = document.getElementById('date-input').value;
-    const regex = /7\/2024$/; // Modificamos la expresión regular para que solo acepte fechas en el formato MM/2024
+document.addEventListener("DOMContentLoaded", function() {
+    const edificiosButton = document.getElementById("edificios-button");
+    const buildingContent = document.getElementById("building-content");
+    const edificioAButton = document.getElementById("edificio-a");
+    const roomContent = document.getElementById("room-content");
+    const audiovisualButton = document.getElementById("audiovisual-button");
+    const avContent = document.getElementById("av-content");
 
-    if (dateInput === '') {
-        // Si no se ingresa ninguna fecha, muestra un mensaje de error diferente
-        document.getElementById('error-message').style.display = 'block';
-        document.getElementById('error-message').innerText = 'Por favor, ingresa una fecha.';
-        document.getElementById('table-container').style.display = 'none';
-    } else if (regex.test(dateInput)) {
-        // Si la fecha cumple con el formato MM/2024, muestra la tabla
-        document.getElementById('table-container').style.display = 'block';
-        document.getElementById('error-message').style.display = 'none';
-    } else {
-        // Si la fecha no cumple con el formato, muestra un mensaje de error
-        document.getElementById('error-message').style.display = 'block';
-        document.getElementById('error-message').innerText = 'Fecha no válida. Por favor, use el formato mm/aaaa.';
-        document.getElementById('table-container').style.display = 'none';
-    }
+    const agendarUsoButton = document.getElementById("agendar-uso-button");
+    const agendaForm = document.getElementById("agenda-form");
+
+    const solicitarusoButton = document.getElementById("solicitar-uso-button");
+    const solicitarForm = document.getElementById("solicitar-form");
+
+    edificiosButton.addEventListener("click", function() {
+        if (buildingContent.style.display === "none" || buildingContent.style.display === "") {
+            buildingContent.style.display = "block";
+        } else {
+            buildingContent.style.display = "none";
+            roomContent.style.display = "none"; // Ocultar la tabla de salones si se cierra la de edificios
+            avContent.style.display = "none"; // Ocultar el cuadro de audiovisual si se cierra la de edificios
+            agendaForm.style.display = "none"; // Ocultar el formulario si se cierra la de edificios
+        }
+    });
+
+    edificioAButton.addEventListener("click", function() {
+        if (roomContent.style.display === "none" || roomContent.style.display === "") {
+            roomContent.style.display = "block";
+        } else {
+            roomContent.style.display = "none";
+            avContent.style.display = "none"; // Ocultar el cuadro de audiovisual si se cierra la de salones
+            agendaForm.style.display = "none"; // Ocultar el formulario si se cierra la de salones
+        }
+    });
+
+    audiovisualButton.addEventListener("click", function() {
+        if (avContent.style.display === "none" || avContent.style.display === "") {
+            avContent.style.display = "block";
+        } else {
+            avContent.style.display = "none";
+        }
+    });
+
+    agendarUsoButton.addEventListener("click", function() {
+        if (agendaForm.style.display === "none" || agendaForm.style.display === "") {
+            agendaForm.style.display = "block";
+            avContent.style.display = "none";
+        } else {
+            agendaForm.style.display = "none"; // Ocultar el formulario si se cierra el cuadro de audiovisual
+        }
+    });
+
+    solicitarusoButton.addEventListener("click", function() {
+        if (solicitarForm.style.display === "none" || agendaForm.style.display === "") {
+            solicitarForm.style.display = "block";
+            avContent.style.display = "none";
+        } else {
+            solicitarForm.style.display = "none";
+        }
+    });
 });
 
-document.getElementById('clear').addEventListener('click', function() {
-    // Limpia el campo de entrada y oculta la tabla y el mensaje de error
-    document.getElementById('date-input').value = '';
-    document.getElementById('error-message').style.display = 'none';
-    document.getElementById('table-container').style.display = 'none';
-});
+function enviarSolicitud() {
+    // Aquí puedes agregar la lógica para enviar la solicitud
+    alert('Solicitud enviada');
+    document.getElementById("av-content").style.display = "block"; 
+    document.getElementById("agenda-form").style.display = "none";
+}
 
-document.getElementById('cancel').addEventListener('click', function() {
-    // Limpia el campo de entrada y oculta la tabla y el mensaje de error
-    document.getElementById('date-input').value = '';
-    document.getElementById('error-message').style.display = 'none';
-    document.getElementById('table-container').style.display = 'none';
-});
+function cancelar() {
+    document.getElementById("agenda-form").style.display = "none"; // Ocultar el formulario cuando se cancela
+    document.getElementById("av-content").style.display = "block"; 
+}
+
+function enviarSolicitudS() {
+    // Aquí puedes agregar la lógica para enviar la solicitud
+    alert('Solicitud enviada');
+    document.getElementById("solicitar-form").style.display = "none"; // Ocultar el formulario después de enviar
+    document.getElementById("av-content").style.display = "block"; 
+}
+
+function cancelarS() {
+    document.getElementById("solicitar-form").style.display = "none"; // Ocultar el formulario cuando se cancela
+    document.getElementById("av-content").style.display = "block"; 
+}
+
+function cancelart() {
+    document.getElementById("av-content").style.display = "none"; 
+}

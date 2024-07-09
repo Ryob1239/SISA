@@ -12,74 +12,92 @@
             <h1>SISTEMA INTEGRAL DE SERVICIOS ACADÉMICOS <br> <center>(DOCENTES)</center> </h1>
             <a href="../Docente.html" class="In">Inicio</a>
             <a href="../../Inicio/Inicio/Inicio.html" class="logout">Cerrar Sesión</a>
-            
         </header>
         <div class="containe">
-            <div class="container">
-                <div class="date-picker">
-                    <div class="header">SELECCIONAR FECHA</div>
-                    <div class="body">
-                        <label for="date-input">INGRESE FECHA <span class="icon">📅</span> </label>
-                        <div>
-                            <hr id="linea">
-                        </div>
-                        <div class="input-container">
-                            <input type="text" id="date-input" placeholder="mes/año" style="background-color: #FFEFD5;">
-                        </div>
-                        <div id="error-message" class="error-message" style="display: none;"></div>
-                    </div>
-                    <div class="footer">
-                        <button id="clear">Clear</button>
-                        <button id="cancel">Cancel</button>
-                        <button id="ok">OK</button>
-                    </div>
-                </div>
-                <div class="table-container" id="table-container" style="display: none;">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>DOCENTE</th>
-                                <th>SALÓN</th>
-                                <th>DÍA</th>
-                                <th>HORARIO</th>
-                                <th>ESTADO</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Karim Manuel Montelongo Sánchez</td>
-                                <td>J004</td>
-                                <td>11/07/2027</td>
-                                <td>7:00 - 8:00</td>
-                                <td>Espera</td>
-                            </tr>
-                            <tr>
-                                <td>Felipe Torres Molina</td>
-                                <td>J001</td>
-                                <td>15/07/2024</td>
-                                <td>10:00 - 12:00</td>
-                                <td>ACEPTADO</td>
-                            </tr>
-                            <tr>
-                                <td>Kevin Alexis Zamora Santos</td>
-                                <td>J008</td>
-                                <td>31/07/2024</td>
-                                <td>9:00 - 10:00</td>
-                                <td>RECHAZADO</td>
-                            </tr>
-                            <tr>
-                                <td>Ángel Gabriel Zatarain Sánchez</td>
-                                <td>J008</td>
-                                <td>02/08/2024</td>
-                                <td>12:00 - 2:00</td>
-                                <td>ACEPTADO</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+            <button class="gradient-button" id="edificios-button">
+                EDIFICIOS
+                <span class="arrow-down">&#9660;</span>
+            </button>
+            <div class="building-content" id="building-content">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><button class="table-button" id="edificio-a">EDIFICIO A <span class="arrow-right">&#9654;</span></button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="table-button">EDIFICIO H <span class="arrow-right">&#9654;</span></button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="table-button">EDIFICIO I <span class="arrow-right">&#9654;</span></button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="table-button">EDIFICIO J <span class="arrow-right">&#9654;</span></button></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-            <div class="logo">
-                <img src="../../Recursos Visuales/Logo.jpg" alt="Logo">
+            <div class="room-content" id="room-content">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><button class="table-button">SALÓN A001</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="table-button" >SALÓN A002</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="table-button">SALÓN A003</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="table-button">SALÓN A004</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="table-button">SALÓN A005</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="table-button">SALÓN A006</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="table-button">SALÓN A007</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="table-button" id="audiovisual-button">AUDIOVISUAL</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="av-content" id="av-content">
+                <h2>AUDIOVISUAL</h2>
+                <h3>EDIFICIO H</h3>
+                <button class="av-button" id="agendar-uso-button">AGENDAR USO</button>
+                <button class="av-button" id="solicitar-uso-button">SOLICITAR PRÉSTAMO</button>
+                <button class="av-button" onclick="cancelart()">CANCELAR</button>
+            </div>
+            <div id="agenda-form" class="agenda-form">
+                <h2>AGENDAR USO DE AUDIOVISUAL EDIFICIO H</h2>
+                <form>
+                    <label for="solicitante">SOLICITANTE:</label>
+                    <input type="text" id="solicitante" name="solicitante"><br>
+                    <label for="fecha">FECHA:</label>
+                    <input type="date" id="fecha" name="fecha"><br>
+                    <label for="horario">HORARIO:</label>
+                    <input type="text" id="horario" name="horario"><br>
+                    <button type="button" onclick="enviarSolicitud()">ENVIAR SOLICITUD</button>
+                    <button type="button" onclick="cancelar()">CANCELAR</button>
+                </form>
+            </div>
+            <div id="solicitar-form" class="solicitar-form">
+                <h2>SOLICITAR USO DE AUDIOVISUAL EDIFICIO H</h2>
+                <form>
+                    <label for="solicitante">SOLICITANTE:</label>
+                    <input type="text" id="solicitanteS" name="solicitante"><br>
+                    <label for="fecha">FECHA:</label>
+                    <input type="date" id="fechaS" name="fecha"><br>
+                    <label for="horario">HORARIO:</label>
+                    <input type="text" id="horarioS" name="horario"><br>
+                    <button type="button" onclick="enviarSolicitudS()">ENVIAR SOLICITUD</button>
+                    <button type="button" onclick="cancelarS()">CANCELAR</button>
+                </form>
             </div>
             <div class="footer"></div>
         </div>
