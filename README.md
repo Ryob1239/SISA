@@ -29,4 +29,6 @@ LISTA DE PENDIENTES
 
 5-Cambiar la imagen del logo
 
-6-Limpiar codigos
+6-Ajustar el tamaño de imagen logo
+
+7-Limpiar codigos
